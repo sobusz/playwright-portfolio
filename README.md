@@ -2,6 +2,8 @@
 
 A comprehensive Playwright portfolio built on public demo sites. The goal is to showcase key techniques: UI/E2E, API, stable selectors, fixtures, test data, reporting, and artifacts.
 
+**How an agent drafts a test here, and how I review it:** [docs/prompt-to-green.md](docs/prompt-to-green.md). Agent rules: [AGENTS.md](AGENTS.md).
+
 ## What we test
 
 - UI/E2E: `https://the-internet.herokuapp.com` (UI edge cases)
@@ -192,7 +194,6 @@ Linting and formatting are enforced via ESLint + Prettier. A Husky pre-commit ho
 
 Generated runtime artifacts are stored in `playwright-report/`, `test-results/`, `artifacts/`, and `tests/.auth/`.
 Use `npm run clean` to remove them before committing or sharing the repository.
-
 
 ## Notes
 
