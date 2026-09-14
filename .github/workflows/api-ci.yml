@@ -1,0 +1,23 @@
+name: api-ci
+
+on:
+  push:
+    branches: [master, miquido-agent-loop]
+  pull_request:
+
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: API contract tests
+        run: npx playwright test tests/api --project=chromium
+        env:
+          CI: true
