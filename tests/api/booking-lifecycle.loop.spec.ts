@@ -1,16 +1,20 @@
 import { test, expect } from '../fixtures/portfolio-fixtures';
+import { buildBookingPayload } from '../data/factories/booking-factory';
+import { restfulBookerBaseURL } from '../utils/restful-booker';
 
 test.describe('Booking lifecycle @api @loop', () => {
-  test('deletes a booking', async ({ bookingApi }) => {
-    const created = await bookingApi.client.createBooking({
-      firstname: 'Del',
-      lastname: 'Ete',
-      totalprice: 1,
-      depositpaid: true,
-      bookingdates: { checkin: '2026-10-01', checkout: '2026-10-05' },
+  // Review: a 201 on DELETE is not the risk. The booking must be unreadable after.
+  test('GET is 404 after a successful delete', async ({ request, bookingApi }) => {
+    const created = await bookingApi.client.createBooking(buildBookingPayload());
+    const id = created.bookingid;
+
+    await bookingApi.client.deleteBooking(id, bookingApi.token);
+
+    const after = await request.get(`${restfulBookerBaseURL}/booking/${id}`);
+    await test.info().attach('get-after-delete-status', {
+      body: String(after.status()),
+      contentType: 'text/plain',
     });
-    bookingApi.track(created.bookingid);
-    await bookingApi.client.deleteBooking(created.bookingid, bookingApi.token);
-    expect(true).toBe(true);
+    expect(after.status()).toBe(404);
   });
 });
