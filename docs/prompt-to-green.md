@@ -16,4 +16,4 @@ Rules: [AGENTS.md](../AGENTS.md) · skill: `.cursor/skills/write-playwright-test
 | [06](loops/06-axe-critical.md)      | A11y that we can keep   | all axe = 0      | form, critical only         |
 | [07](loops/07-visual-mask.md)       | Stable screenshot       | full page, 0.5   | form clip, 0.02             |
 
-Open the pull request to see the two-commit history on each spec: https://github.com/sobusz/playwright-portfolio/pull/1
+Open the pull request to see the two-commit history on each spec: https://github.com/sobusz/playwright-portfolio/pull/2
