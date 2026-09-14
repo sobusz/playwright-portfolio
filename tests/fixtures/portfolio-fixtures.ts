@@ -14,7 +14,9 @@ export type BookingApi = {
 };
 
 export const test = base.extend<{ siteUrls: SiteUrls; bookingApi: BookingApi }>({
-  siteUrls: async (_unused, use) => {
+  // Playwright requires object destructuring; this fixture has no deps.
+  // eslint-disable-next-line no-empty-pattern -- fixture signature
+  siteUrls: async ({}, use) => {
     await use({
       automationExercise: 'https://automationexercise.com',
       theInternet: 'https://the-internet.herokuapp.com',
