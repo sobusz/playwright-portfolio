@@ -2,7 +2,7 @@ name: api-ci
 
 on:
   push:
-    branches: [master, miquido-agent-loop]
+    branches: [master]
   pull_request:
 
 jobs:

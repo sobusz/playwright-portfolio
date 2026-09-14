@@ -4,7 +4,7 @@ I use Cursor to draft tests. I merge only when the assertion matches a real risk
 
 Rules for the agent: [AGENTS.md](../../AGENTS.md). Skill: `.cursor/skills/write-playwright-test/SKILL.md`.
 
-Hiring paste URL (this catalog): [docs/prompt-to-green.md](../prompt-to-green.md).
+Index: [docs/prompt-to-green.md](../prompt-to-green.md).
 
 | Loop                                              | Risk                                     | Agent draft                | My review                                  |
 | ------------------------------------------------- | ---------------------------------------- | -------------------------- | ------------------------------------------ |
