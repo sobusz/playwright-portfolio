@@ -2,6 +2,8 @@
 
 You draft tests. A human decides what is worth testing and merges.
 
+Reviewed examples (prompt → draft commit → review commit): `docs/loops/README.md`.
+
 ## Before you write a spec
 
 1. Name the risk in one sentence. If you cannot, ask — do not invent coverage.

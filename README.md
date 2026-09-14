@@ -2,7 +2,7 @@
 
 A comprehensive Playwright portfolio built on public demo sites. The goal is to showcase key techniques: UI/E2E, API, stable selectors, fixtures, test data, reporting, and artifacts.
 
-**How an agent drafts a test here, and how I review it:** [docs/prompt-to-green.md](docs/prompt-to-green.md). Agent rules: [AGENTS.md](AGENTS.md).
+**How an agent drafts a test here, and how I review it:** [docs/prompt-to-green.md](docs/prompt-to-green.md) · [all loops](docs/loops/README.md). Agent rules: [AGENTS.md](AGENTS.md).
 
 ## What we test
 
