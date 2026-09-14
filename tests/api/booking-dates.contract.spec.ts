@@ -28,6 +28,7 @@ test.describe('Restful Booker dates @api', () => {
     await expect(bookingApi.client.getBooking(created.bookingid)).rejects.toThrow();
 
     const raw = await request.get(`${restfulBookerBaseURL}/booking/${created.bookingid}`);
+    // Review: HTTP 200 with inverted dates is the product hole, not a pass.
     const parsed = bookingSchema.safeParse(await raw.json());
 
     expect(parsed.success).toBe(false);
