@@ -14,10 +14,11 @@ Prompt I gave the agent:
 
 ## My review
 
-Diff vs draft: https://github.com/sobusz/playwright-portfolio/compare/792802f...HEAD
-
 - No fixture `track` — we already deleted
 - GET `/booking/:id` must be **404**
 - Attach the status to the report
+
+Review commit: [`82d8940`](https://github.com/sobusz/playwright-portfolio/commit/82d8940)
+Diff: https://github.com/sobusz/playwright-portfolio/compare/792802f...82d8940
 
 Restful Booker: DELETE is `201`, GET after delete is `404`.
