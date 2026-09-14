@@ -1,10 +1,10 @@
 # From prompt to a passing test
 
-I draft with Cursor. I review before anything lands in the suite. That split is the job, not a slogan.
+Cursor drafts the spec. I change the assertion before it lands in the suite.
 
-**Catalog (every loop = agent commit + my review):** [docs/loops/README.md](loops/README.md)
+Each row below is two commits: an agent draft, then my review. Catalog: [docs/loops/README.md](loops/README.md).
 
-Rules: [AGENTS.md](../AGENTS.md) · skill: `.cursor/skills/write-playwright-test/SKILL.md` · CI: `.github/workflows/api-ci.yml`
+Rules: [AGENTS.md](../AGENTS.md) · write skill: `.cursor/skills/write-playwright-test/SKILL.md` · review skill: `.cursor/skills/review-playwright-test/SKILL.md` · CI: `.github/workflows/api-ci.yml`
 
 | #                                   | I asked for             | Agent shipped    | I changed it to             |
 | ----------------------------------- | ----------------------- | ---------------- | --------------------------- |

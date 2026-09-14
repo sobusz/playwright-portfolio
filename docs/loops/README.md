@@ -1,8 +1,8 @@
 # Agent drafts, I review
 
-I use Cursor to draft tests. I merge only when the assertion matches a real risk.
+Cursor writes the first spec. I merge only when the assertion matches a real risk.
 
-Rules for the agent: [AGENTS.md](../../AGENTS.md). Skill: `.cursor/skills/write-playwright-test/SKILL.md`.
+Rules: [AGENTS.md](../../AGENTS.md). Write: `.cursor/skills/write-playwright-test/SKILL.md`. Review: `.cursor/skills/review-playwright-test/SKILL.md`.
 
 Index: [docs/prompt-to-green.md](../prompt-to-green.md).
 

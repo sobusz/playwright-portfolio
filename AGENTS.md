@@ -2,7 +2,7 @@
 
 You draft tests. A human decides what is worth testing and merges.
 
-Reviewed examples: `docs/loops/README.md`. Cursor skill: `.cursor/skills/write-playwright-test/SKILL.md`. Review skill: `.cursor/skills/review-playwright-test/SKILL.md`.
+Reviewed examples: `docs/loops/README.md`. Write skill: `.cursor/skills/write-playwright-test/SKILL.md`. Review skill: `.cursor/skills/review-playwright-test/SKILL.md`.
 
 ## Risk first
 

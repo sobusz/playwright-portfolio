@@ -1,8 +1,8 @@
 # Playwright Portfolio
 
-A comprehensive Playwright portfolio built on public demo sites. The goal is to showcase key techniques: UI/E2E, API, stable selectors, fixtures, test data, reporting, and artifacts.
+Playwright suite on public demo sites: UI/E2E, API contracts, fixtures, and CI.
 
-**How an agent drafts a test here, and how I review it:** [docs/prompt-to-green.md](docs/prompt-to-green.md) · [all loops](docs/loops/README.md). Agent rules: [AGENTS.md](AGENTS.md).
+How I review an agent draft: [docs/prompt-to-green.md](docs/prompt-to-green.md) · [loops](docs/loops/README.md) · [AGENTS.md](AGENTS.md).
 
 ## What we test
 
